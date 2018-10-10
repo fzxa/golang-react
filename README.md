@@ -1,5 +1,4 @@
-# Nebulas Develops
-https://developers.nebulas.io
+# Golang+React Project
 
 ### Prerequisites
 
@@ -16,7 +15,7 @@ https://developers.nebulas.io
 
 ```bash
 cd $GOPATH/src
-go get -u -v github.com:nebulasio/develops.nebulas.io.git
+go get -u -v https://github.com/fzxa/golang-react.git
 ```
 
 ```bash
