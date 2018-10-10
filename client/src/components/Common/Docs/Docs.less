@@ -1,0 +1,95 @@
+/*docs*/
+.doc {
+  &-wrap {
+    width:1080px;
+    margin:0 auto;
+    min-height:600px;
+    display: table;
+  }
+}
+
+.doc-left {
+  width:20%;
+  display: table-cell;
+  border-right:1px solid #dee5e8;
+}
+.nav-bar {
+  padding-top:20px;
+}
+.doc-left h3 {
+  margin-top: 0;
+  padding: 0 9px;
+  margin-bottom: 10px;
+  color: #666 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px !important;
+  letter-spacing: .5px;
+}
+.doc-left ul {
+  margin-bottom:2rem;
+}
+.doc-left ul li {
+  border-radius: 3px;
+  margin-right:10px;
+}
+.doc-left ul li a {
+  display: block;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px 9px;
+  font-size: 13px;
+  color:rgb(132, 130, 136);
+  cursor: pointer;
+}
+.doc-left ul li a:hover {
+  background:#efefef;
+}
+.doc-left ul .on {
+  background-color: #443f54!important;
+  color:#fff;
+}
+
+.doc-right {
+  margin-left:246px;
+  width:80%;
+  display: table-cell;
+  padding-bottom:15%;
+  &-wrap {
+    width:96%;
+    //min-height:500px;
+    max-width:800px;
+    margin:10px auto;
+    position:relative;
+    top:20px;
+  }
+}
+.doc-right .edit {
+  text-align: right;
+  padding:10px 0;
+}
+.doc-right .edit a{
+  font-size:.7rem;
+  color:#333;
+  text-decoration: none;
+
+}
+
+@media screen and (max-width:500px) {
+  .doc-wrap {
+    width:100% !important;
+  }
+  .doc-left {
+    display:none !important;
+  }
+  .doc-right {
+    width:100% !important;
+    margin-left:0 !important;
+  }
+  .heade-crumb {
+    padding-left:20px;
+  }
+  .markdown-body pre {
+    width:100% !important;
+  }
+}

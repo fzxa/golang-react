@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
+<meta name="description" content="Nebulas Incentive Program. Nebulas is a next generation public blockchain, aiming for a continuously improving ecosystem.">
+<title>Developers | Nebulas.io</title>
+<link rel="shortcut icon" href="/static/image/logo.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="/static/image/logo.png">
+<link rel="stylesheet" href="/static/style/common.css">
+<link rel="stylesheet" href="/static/style/lib/editormd.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrap clear">
+            <div class="logo">
+                <a href="/"><img src="/static/image/nebulasx60.png" alt="Nebulas" /></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/docs">General</a></li>
+                    <li><a href="/docs">Nodeos</a></li>
+                    <li><a href="/docs">General</a></li>
+                    <li><a href="/docs">Nodeos</a></li>
+                    <li><a href="/docs">General</a></li>
+                    <li><a href="/docs">Nodeos</a></li>
+                </ul>
+            </nav>
+        </div><!--end header-wrap-->
+       
+    </head>
+
+    <div class="heade-crumb">
+            <div class="heade-crumb-wrap">
+                v1.0.0
+            </div>
+    </div>
+
+    <section class="doc-wrap clear">
+        <div class="doc-left">
+            <div class="nav-bar">
+                <h3>GETTING STARTED</h3>
+                <ul>
+                    <li class="on"><a href="overflow">Overview</a></li>
+                    <li><a href="docker-quickstart">Docker Quickstart</a></li>
+                    <li><a href="accounts-and-permissions">Accounts and Permissions</a></li>
+                </ul>
+            </div><!--end nav-bar-->
+        </div>
+        <div class="doc-right">
+                <p class="edit"><a href="#" id="edit">SUGGEST EDITS</a></p>
+                <div id="editormd">
+                    <textarea id="append-test" style="display:none;">
+{{.content_md}}
+                    </textarea>
+                </div>
+
+                <div id="test-editormd-view">
+                    <textarea style="display:none;"></textarea>               
+                </div>
+        </div>
+    </section>
+
+ <script src="/static/js/lib/jquery.min.js"></script>
+
+ <script src="/static/js/editormd_lib/marked.min.js"></script>
+ <script src="/static/js/editormd_lib/prettify.min.js"></script>
+ 
+ <script src="/static/js/editormd_lib/raphael.min.js"></script>
+ <script src="/static/js/editormd_lib/underscore.min.js"></script>
+ <script src="/static/js/editormd_lib/sequence-diagram.min.js"></script>
+ <script src="/static/js/editormd_lib/flowchart.min.js"></script>
+ <script src="/static/js/editormd_lib/jquery.flowchart.min.js"></script>
+
+
+ <script src="/static/js/lib/editormd.min.js"></script>
+ <script>
+
+      $(function() {
+ 
+        // var editor = window.editor =  editormd("editormd", {
+        //     width   : "96%",
+        //     height  : 640,
+        //     syncScrolling : "single",
+        //     path    : "/static/js/editormd_lib/",
+        //     //toolbar : false,
+        //     onload  : function(){
+        //         this.unwatch();
+        //     }
+        // });
+
+
+   
+        var view = editormd.markdownToHTML("test-editormd-view", {
+             markdown        : "\r\n" + $("#append-test").text() ,//+ "\r\n" + $("#append-test").text(),
+
+        });
+
+
+
+
+
+        /*
+        // or
+        var editor = editormd({
+            id   : "editormd",
+            path : "../lib/"
+        });
+        */
+    });
+ </script>
+</body>
+</html>

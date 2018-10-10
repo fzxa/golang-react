@@ -1,0 +1,226 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+body {font-family: "proxima-nova, sans-serif"}
+.clear:after{content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.clear{zoom:1;}
+
+/*home*/
+header { 
+    width:100%;
+    height:100px;
+    margin:0 auto;
+}
+header nav {
+    float:right;
+}
+header nav ul li {
+    float:left;   
+    line-height:40px;
+}
+
+header nav ul li a {
+    padding:0 15px;
+    text-decoration: none;
+    color:#8a8989;
+}
+header nav ul li a:hover {
+    color:#333;
+}
+header .logo {
+    width:180px;
+    height:40px;
+    float:left;
+}
+header .header-wrap {
+    width:1080px;
+    margin:10px auto;
+    height:40px;
+}
+
+header .heade-bar {
+    width:100%;
+    height:38px;
+    background:#f6f7f8;
+    border-bottom:1px solid #dee5e8;
+}
+
+.heade-crumb {
+    height:45px;
+    border-top:4px solid #443f53;
+    border-bottom:1px solid #dee5e8;
+    background:#f6f7f8;
+    color:#605C6D;
+}
+.heade-crumb-wrap {
+    width:1080px;
+    margin:0 auto;
+    line-height:38px;
+    font-size:.8rem;
+    color:#7d7d8e;
+}
+
+.banner {
+    background:#EDEEF2;
+    padding:60px 20px;
+    text-align:center;
+}
+.banner h1 {
+    font-size:2rem;
+    color:#605c6d;
+    margin-bottom:1rem;
+}
+.banner p {
+    font-size:1rem;
+    line-height:1.5;
+    color:#605c6d;
+    max-width:80%;
+    margin:0 auto;
+    display:block;
+}
+.banner .banner-btn {
+    background:#443f54;
+    color:#fff;
+    padding:12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*docs*/
+.doc-wrap {
+    width:1080px;
+    margin:0 auto;
+    min-height:600px;
+    display: table;
+}
+.doc-left {
+    width:20%;
+    display: table-cell;
+    border-right:1px solid #dee5e8;
+}
+.nav-bar {
+    padding-top:20px;
+}
+.doc-left h3 {
+    margin-top: 0;
+    padding: 0 9px;
+    margin-bottom: 10px;
+    color: #7d7f7f;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+.doc-left ul li {
+    border-radius: 3px;
+    margin-right:10px;
+}
+.doc-left ul li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 9px;
+    font-size: 13px;
+    color:rgb(132, 130, 136);
+    cursor: pointer;
+}
+.doc-left ul li a:hover {
+    background:#efefef;
+}
+.doc-left ul .on a {
+    background-color: #443f54!important;
+    color:#fff;
+}
+
+.doc-right {
+    margin-left:246px;
+    width:80%;
+    display: table-cell;
+}
+.doc-right .edit {
+    text-align: right;
+}
+.doc-right .edit a{
+    font-size:.7rem;
+    color:#333;
+    text-decoration: none;
+    
+}
