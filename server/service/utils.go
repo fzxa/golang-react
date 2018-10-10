@@ -17,7 +17,7 @@ func init() {
 
 	var err error
 
-	SqlDB, err = sql.Open("mysql", "explorer:NbVgE6bQ8iM,(Aty5HBs@tcp(nebulas.cvajxeo2mhiu.us-west-1.rds.amazonaws.com:3306)/platform?parseTime=true")
+	
 	if err != nil{
 		log.Fatalln(err)
 	}
